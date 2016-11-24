@@ -1,0 +1,7 @@
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {zoom:1;}
+/* tmall focus */
+#focus {width:550px; height:300px; overflow:hidden; position:relative;}
+#focus ul {height:380px; }
+#focus ul li {float:left; width:550px; height:300px; overflow:hidden; position:relative; background:#000; font-family:Verdana,Arial,Helvetica,sans-serif; }
+#focus ul li div {position:absolute; overflow:hidden; font-family:Verdana,Arial,Helvetica,sans-serif; }

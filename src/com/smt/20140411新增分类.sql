@@ -1,0 +1,1 @@
+INSERT INTO t_app_talent_category(parentId,typename,flag,SUBID,alias,layer) VALUES (6,'设备租赁',0,6,'sbzl',2);

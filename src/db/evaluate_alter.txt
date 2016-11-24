@@ -1,0 +1,5 @@
+use  no1stage;
+alter table `no1stage`.`t_app_business_evaluate`    add column `state` TINYINT(1) default 0;
+update `t_app_business_evaluate` set state=1;
+alter table `no1stage`.`t_app_business_evaluate`    add column `pjcount` TINYINT(1) default 0;
+update `t_app_business_evaluate` set pjcount=0;

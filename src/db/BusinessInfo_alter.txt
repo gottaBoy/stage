@@ -1,0 +1,4 @@
+use  no1stage;
+alter table `no1stage`.`t_app_business_info` add column `otherCost3` varchar(32) NULL after `otherCost2`;
+alter table `no1stage`.`t_app_business_cost` add column `keywords` varchar(100) default NULL;
+alter table `no1stage`.`t_app_business_cost` add column `bcostId` int (11) default 0;

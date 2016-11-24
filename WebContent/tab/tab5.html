@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tab切换</title>
+<style type="text/css">
+body{margin:0;padding:0;font-size:12px;font-family: "微软雅黑",Arial;}
+a{color:#000; text-decoration:none;}
+ul{padding:0; margin:0; list-style:none; }
+.l{float:left}
+img,input{border:0;}
+form,ul,li,dl,dd,p,dt,img{margin:0;padding:0;}
+img{border:none;}
+.bj{width:690px;height:370px;background:#f8f8f8}
+#box{width:690px;height:30px;padding:16px 0;}
+#box li{float:left;margin-left:5px;margin-top:5px}
+#box li a{display:block;line-height:30px;text-align:center;color:#a1a1a1;font-weight:bold;padding:0 15px}
+#box .cc a{color:#fff;background:#f86a00 ;font-size:14px;}
+.con{width:690px;height:310px;}
+#con1,#con2,#con3,#con4,#con5,#con6,#con7,#con8{display:none}
+.con-zhong{width:678px;height:293px;background:url(../theme/images2/tu104.jpg) repeat-x;padding:7px 0}
+</style>
+</head>
+
+<body>
+<div class="bj">
+<div id="box">
+<ul class="pp2 l">
+   <li value="0" class="cc"><a href="">常控管</a></li>
+   <li value="1" ><a href="">统计2</a></li>
+   <li value="2" ><a href="">统计3</a></li>
+
+</ul>
+</div>
+<div class="con" id="con0">
+ <p class="con-left l"><img src="../theme/images2/tu102.jpg" width="6" height="307" /></p>
+ <div class="con-zhong l">
+   <img src="../theme/images2/tu105.jpg" width="672" height="292" /></div>
+ <p class="con-right l"><img src="../theme/images2/tu103.jpg" width="6" height="307" /></p>
+</div>
+<div class="con" id="con1">
+ <p class="con-left l"><img src="../theme/images2/tu102.jpg" width="6" height="307" /></p>
+ <div class="con-zhong l">
+   <img src="../theme/images2/tu105.jpg" width="672" height="292" /></div>
+ <p class="con-right l"><img src="../theme/images2/tu103.jpg" width="6" height="307" /></p>
+</div>
+<div class="con" id="con2">
+ <p class="con-left l"><img src="../theme/images2/tu102.jpg" width="6" height="307" /></p>
+ <div class="con-zhong l">
+   <img src="../theme/images2/tu105.jpg" width="672" height="292" /></div>
+ <p class="con-right l"><img src="../theme/images2/tu103.jpg" width="6" height="307" /></p>
+</div>
+
+
+<script language="javascript">
+function $(id){return document.getElementById(id)}
+ for(i=0;i<3;i++){
+   $("box").getElementsByTagName("li")[i].onmouseover=function(){
+		 for(n=0;n<3;n++){
+			 $("con"+n).style.display="none"
+			 $("box").getElementsByTagName("li")[n].style.background=""
+			 $("box").getElementsByTagName("li")[n].className=""
+		 }
+		v=this.value
+		$("con"+v).style.display="block"
+		this.style.background="#f86a00"
+		this.className="cc"
+		
+	 }
+   }
+</script>
+</div>
+</body>
+</html>

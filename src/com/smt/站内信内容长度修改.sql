@@ -1,0 +1,1 @@
+alter table t_app_message modify column Content varchar(500);

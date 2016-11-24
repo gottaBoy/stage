@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+<dwr>
+	<allow>		
+
+          <create creator="spring" javascript="costDao">
+             <param name="beanName" value="costDao"/>
+        </create> 
+         <convert converter="bean" match="com.smt.entity.TAppTalentCategory" />
+         <convert converter="bean" match="com.smt.entity.TAppCostInfo" />
+	</allow>
+	
+	<allow>		
+
+          <create creator="spring" javascript="friendInfoDao">
+             <param name="beanName" value="friendInfoDao"/>
+        </create> 
+         <convert converter="bean" match="com.smt.entity.TAppUserInfo" />
+	</allow>
+	
+		<allow>		
+
+          <create creator="spring" javascript="growthDao">
+             <param name="beanName" value="growthDao"/>
+        </create> 
+         <convert converter="bean" match="com.smt.entity.TAppGrowth" />
+	</allow>
+	
+
+        
+	 <signatures>
+		<![CDATA[ 
+			import java.util.List;	
+			]]>
+	</signatures>
+              
+	
+</dwr>
+

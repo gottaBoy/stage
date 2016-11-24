@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style-type: none;
+}
+body {
+	font-size: 13px;
+	background-color: #f0f0f0;
+	color: #666666;
+}
+#box_title {
+	width: 235px;
+	margin: 0px auto;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 14px;
+}
+#con {
+	width: 1001px;
+	height: 205px;
+	position: relative;
+	border-bottom: 1px solid #d6d6d6;
+	background-color: #FFF;border-left: 1px solid #d6d6d6;border-right: 1px solid #d6d6d6;
+	overflow: hidden;
+}
+.task {
+	padding:6px;
+}
+.task1 {
+	width:329px;
+	padding-top:10px;
+}
+.task2 {
+	padding-left:70px;
+}
+.task2 div {
+	padding-top:5px;
+}
+.task3 {
+	text-align:right;
+	padding-right:25px;
+}
+.task3 a {
+	text-decoration:underline;
+	color:#1A85A7;
+}
+.task4 {
+	border-top:#d6d6d6 1px dotted;
+	height:5px;
+	margin-top:5px;
+}
+
+#con .bottomcover {
+	position: absolute;
+	bottom: 0;
+	background: url("../images/halftransp.png") no-repeat 0 -5px;
+	height: 35px;
+	width: 235px;
+	_background: none;
+ 	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.t.sinajs.cn/t35/style/images/tlogin/halftransp.png?id=1341302813656', sizingMethod='crop');
+	pointer-events: none;
+}
+img {
+	border: none;
+}
+#con ul {
+	margin-left:10px;
+	padding: 0;
+}
+#con ul li {
+	width: 329px;
+	overflow: hidden;
+	line-height: 1.5;
+	float:left;
+}
+#con ul li .div_left {
+	float: left;
+	
+	border: 1px solid;
+}
+#con ul li .div_right {
+	float: right;
+	width: 150px
+}
+#con ul li .div_right a {
+	color: #f3be5e;
+	padding: 0px;
+}
+#con ul li .div_right .twit_item_time {
+	color: #999;
+	padding: 0px;float:right
+}

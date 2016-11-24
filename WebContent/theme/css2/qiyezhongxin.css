@@ -1,0 +1,109 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.an2{background:url(../images2/tu34.jpg) no-repeat;width:102px;height:37px;color:#fff;margin-right:10px}
+.top1-yyy{width:200px;}
+.top1-yyy2{width:180px;float:right}
+
+
+/*top3*/
+.top3{background:#3a3e41;height:54px;}
+.top3-d li a:hover{background:#282d31}
+
+
+/*top4*/
+.qy-banner{width:1003px;height:191px;margin:0 auto}
+.qy-bzhong{width:979px;height:116px;background:url(../images2/tu77.jpg) repeat-x;padding:7px 7px;position:relative}
+.qy-tu{height:102px;width:122px}
+
+.qy-tu2 li{ling-height:25px;height:25px;}
+.qy-tu2 li.sk{font-weight:bold;font-size:24px;line-height:32px;height:38px;}
+.qy-tu2 li.sk a{color:#F00;font-size:16px;margin:0 10px}
+.an3{background:nona;background:url(../images2/tu80.jpg) no-repeat;width:111px;height:31px;color:#fff;font-size:14px}
+
+.qy-tu3{font-size:18px;line-height:40px}
+.qy-tu4{position:absolute;top:40px;left:800px;font-size:18px;line-height:40px}
+.qx{width:60px;background:none;font-size:18px;color:#F00}
+
+/*top5*/
+.qy-bzzx{width:1003px;height:242px;margin:10px auto}
+.bzzx02{width:5px;height:242px}
+.bzzx01{width:983px;height:222px;background:url(../images2/tu84.jpg) repeat-x;padding:10px 5px;position:relative}
+.bzzx03 {width:440px;height:222px;margin-right:23px;}
+.bzzx03 dt{float:left;width:242px;height:222px;margin-right:10PX}
+.bzzx03 dd{float:left;height:24px;line-height:24px;width:180px}
+.bzzx04{width:235px;margin-right:24px;}
+.bzzx04 dt{width:227px;height:194px;background:url(../images2/tu86.jpg) no-repeat;padding:4px 4px}
+.bzzx04 dt:hover{background:url(../images2/tu85.jpg) no-repeat;}
+.bzzx04 dd{width:235px;text-align:center}
+
+.bzzx05{width:211px;height:69px;position:absolute;top:0px;left:0px}
+
+/*新作品*/
+.nex2{width:1003px;margin:0 auto;overflow:auto;zoom:1}
+.nex-p{width:1003px}
+
+.nzp1{width:308px;height:112px;background:url(../images2/tu88.jpg) no-repeat;}
+/* .nzp1:hover{background:url(../images2/tu89.jpg) no-repeat;} */
+.nzp1 dt{float:left;margin-left:10PX; margin-top:10px; margin-right:10px;float:left;}
+.nzp1 dd{margin-top:5px;line-height:20px;width:106px;float:left;position:relative;
+top:20px}
+
+.nzp2{width:308px;height:112px;background:url(../images2/tu9090.jpg) no-repeat;}
+/* .nzp2:hover{background:url(../images2/tu91.jpg) no-repeat;} */
+.nzp2 dt{float:left;margin-left:10PX; margin-top:10px; margin-right:10px;float:left;}
+.nzp2 dd{margin-top:5px;line-height:20px;width:106px;float:left;position:relative;
+top:20px}
+
+/*活跃*/
+.nex3{width:1003px;margin:0 auto;overflow:auto;zoom:1}
+.nex-p{width:1003px}
+
+.nhy{width:242px;height:352px;background:url(../images2/tu92-g.jpg) no-repeat;margin-right:8px;}
+/*.nhy:hover{background:url(../images2/tu89.jpg) no-repeat;}*/
+.nhy dt{position:relative;top:11px;margin-left:11px;}
+.nhy dd{position:relative;top:20px;margin-left:11px;line-height:22px;float:left;}
+
+.nhy .dd1{font-size:15px;width:150px;float:left;}
+.nhy .dd2 :link{color:#00b7ed;width:60px;float:left;}
+.nhy .dd2 :visited{color:#00b7ed;}
+.nhy .dd2 :hover{color:#ff00ff;}
+
+.nhy .dd3{width:90px;}
+.nhy .dd4{margin-left:1px;width:130px;}
+.nhy .ddf{color:#ee0000}
+.nhy .dtn{position:relative;top:45px;margin-left:152px;}
+
+.nzp1 dt{float:left;margin-left:10PX; margin-top:10px; margin-right:10px;float:left;}
+.nzp1 dd{margin-top:5px;line-height:20px;width:106px;float:left;position:relative;
+top:20px}
+
+.nhy2{width:242px;height:352px;background:url(../images2/tu92-g.jpg) no-repeat;}
+/*.nhy2:hover{background:url(../images2/tu89.jpg) no-repeat;}*/
+.nhy2 dt{position:relative;top:11px;margin-left:11px;}
+.nhy2 dd{position:relative;top:20px;margin-left:11px;line-height:22px;float:left;}
+
+.nhy2 .dd1{font-size:15px;width:150px;float:left;}
+.nhy2 .dd2 :link{color:#00b7ed;width:60px;float:left;}
+.nhy2 .dd2 :visited{color:#00b7ed;}
+.nhy2 .dd2 :hover{color:#ff00ff;}
+
+.nhy2 .dd3{width:90px;}
+.nhy2 .dd4{margin-left:1px;width:130px;}
+.nhy2 .ddf{color:#ee0000}
+.nhy2 .dtn{position:relative;top:45px;margin-left:152px;}
+
+
+/*预约*/
+.nex4{width:1003px;margin:0 auto;overflow:auto;zoom:1}
+.nex-p{width:1003px}
+.search {width:1013px;height:120PX;background-color:#E6e7e9}
+.search dd{line-height:29px;margin-left:15Px}
+
+.m1 {width:1003px;height:10PX;}
+
+.nex4-p2{margin-right:7px;}
+.nex4-p2 dt{width:242px;height:222px;}
+.nex4-p2 dd{line-height:22px;}
+.nex4-p3 dd{line-height:22px;}
+.nex4-p3 .ddd{line-height:22px; height:32px;}
+

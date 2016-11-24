@@ -1,0 +1,6 @@
+*.class
+.settings
+.settings/*
+*.jar
+WebContent/WEB-INF/classes
+WebContent/WEB-INF/classes/*

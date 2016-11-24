@@ -1,0 +1,192 @@
+/*ȫ�ֶ��� www.afeidy.com-2013-05-03*/
+body {
+	text-align:left;
+	margin:0 auto;
+	font-family:"����",Arial,Helvetica,sans-serif;
+	font-size:12px;
+	
+	color:#4d4d4d;
+}
+input {
+	font:10pt Verdana,Arial,Helvetica,sans-serif,"����";
+	color:#999;
+}
+img {
+	border:none;
+	vertical-align:top;
+}
+p,ul,ol,li,form,dd,dl,dt {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,select,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+a {
+	color:#373737;
+	text-decoration:none;
+}
+* {
+	margin:0;
+	padding:0;
+}
+a:hover {
+	text-decoration:underline;
+}
+.m_yahei {
+	font-family:"΢���ź�";
+}
+.hdgray01 {
+	color:#767676;
+}
+.hdgray01 a {
+	color:#abadac;
+}
+.hdgray02 {
+	color:#A8A8A8;
+}
+.hdgray03 {
+	color:#787878;
+}
+.hdgray03 a {
+	color:#787878;
+}
+.hdgray04 {
+	color:#d1d1d1
+}
+.hdgray05 {
+	color:#4d4d4d;
+}
+.blcolor {
+	color:#1e7abb;
+}
+.blcolor a {
+	color:#1e7abb;
+}
+.blcolor1 {
+	color:#3e7094;
+}
+.blcolor1 a {
+	color:#3e7094;
+}
+.blhover a:hover {
+	color:#1e7abb;
+}
+.redhover a:hover {
+	color:#df436f;
+}
+.h115pxov {
+	height:115px;
+	overflow:hidden;
+}
+.h138pxov {
+	height:138px;
+	overflow:hidden;
+}
+.wd145pxov {
+	width:145px;
+	overflow:hidden;
+}
+.wd105pxov {
+	width:105px;
+	overflow:hidden;
+}
+.hdwrap {
+	width:690px;
+	background:#f5f5f5
+}
+/*��ҳͼƬ��*/
+
+.flashlist {
+	height:240px;
+}
+.flashlist .f_out {
+	height:220px;
+	overflow:hidden;
+	position:relative;
+	z-index:100;
+}
+.flashlist .f_out .vip01pic,.jcToppic .vip01pic {
+	width:58px;
+	height:58px;
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:url(../images/vipico.gif) no-repeat 0 0;
+	z-index:200
+}
+.vip02pic {
+	width:39px;
+	height:39px;
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:url(../images/vipico.gif) no-repeat -80px 0;
+	z-index:200
+}
+.flashlist .f_out .picintro {
+	height:45px;
+	background:url(../images/hdpng.png) no-repeat scroll 0 -1px;
+	position:absolute;
+	bottom:0px;
+	left:-2px;
+	width:680px;
+	z-index:999;
+	padding:0 20px;
+}
+.picintro h2 a {
+	color:#d36cb2;
+	font-family:"΢���ź�";
+	font-size:14px;
+	font-weight:bold;
+	line-height:25px;
+}
+.picintro p {
+	color:#767676;
+	line-height:18px;
+}
+.picintro p a {
+	color:#abadac;
+}
+.flash_tab {
+	height:16px;
+	/*background:url(../images/hdbg.gif) no-repeat scroll 0 0;*/
+	padding-top:7px;
+	background:#f0f0f2;
+	line-height:10px;
+}
+.flash_tab .tabs {
+	width:200px;
+	height:10px;
+	overflow:hidden;
+	float:right;
+}
+.flash_tab .tabs ul li {
+	width:33px;
+	height:12px;
+	float:left;
+	display:block;
+}
+.flash_tab .tabs ul li.opdiv,.noopdiv {
+	padding:0;
+	opacity:1
+}
+.flash_tab .tabs ul li.opdiv a {
+	width:21px;
+	height:12px;
+	background:url(../images/tu.jpg) no-repeat scroll -18px -2px;
+	display:block;
+}
+.flash_tab .tabs ul li.opdiv a:hover {
+	background-position:0px -2px;
+}
+.flash_tab .tabs ul li.noopdiv a {
+	width:21px;
+	height:12px;
+	background:url(../images/tu.jpg) no-repeat scroll 0px -2px;
+	display:block;
+}

@@ -1,0 +1,1 @@
+ALTER TABLE t_app_user_info ADD place VARCHAR(500);

@@ -1,0 +1,14 @@
+/* 转载请保留版权信息：懒人图库 www.lanrentuku.com */
+*{ padding:0px; margin:0px;}
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决IE6下滚动抖动的问题*/
+/*解决IE6下不兼容 position:fixed 的问题*/
+#code,#code_hover,#gotop{ width:54px; height:54px; background:url(../images2/icon.png) no-repeat; position:fixed; right:50px; cursor:pointer;
+_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+}
+#code{ background-position:-371px -293px; bottom:120px; _margin-bottom:120px;}
+#code_hover{ background-position:-435px -293px; bottom:120px; _margin-bottom:120px;}
+#gotop{ background-position:-371px -357px; bottom:57px; _margin-bottom:57px;} 
+#d1photo{z-index:1000;position:fixed; bottom:120px; _margin-bottom:120px;}
+#QQlink{z-index:1000;position:fixed; bottom:180px;right:2px; _margin-bottom:150px;}
+#code_img{z-index:1000; width:363px; height:352px; background:url(../images2/icon.png) -1px -1px no-repeat; position:fixed; right:102px; bottom:100px; display:none; cursor:pointer;
+_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))); _margin-bottom:100px;}

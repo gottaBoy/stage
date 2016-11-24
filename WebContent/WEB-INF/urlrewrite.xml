@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite        
+			PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"        
+"http://tuckey.org/res/dtds/urlrewrite3.0.dtd">
+ <urlrewrite> 
+ 	 <!--test登录页面-->
+     <rule> 
+         <from>^/login.html</from> 
+         <to type ="forward">/indexAction!login.htm</to> 
+     </rule> 
+     <rule> 
+         <from>tab5/([0-9]+).html$</from> 
+         <to type ="forward">/member/artInfo!toTab5.htm?id=$1</to> 
+     </rule> 
+     <rule> 
+         <from>doIndex.html</from> 
+         <to type ="forward">/member/top!doIndex.htm</to> 
+     </rule> 
+     <rule> 
+         <from>^/windowLogin.html</from> 
+         <to type ="forward">/indexAction!windowLogin.htm</to> 
+     </rule> 
+     <rule> 
+         <from>^/login/([0-9a-zA-Z]+)/([0-9a-zA-Z]+).html$</from> 
+         <to type ="forward">/indexAction!login.htm?urlRewriteUrl=$1&amp;urlRewriteParam=$2</to> 
+     </rule> 
+     <!-- 首页面-->
+     <rule> 
+         <from>index.html</from> 
+         <!--<to type ="forward">/indexAction!toShow.htm</to> -->
+         <to type ="forward">/user/userAction!doTestIndex.htm</to> 
+     </rule> 
+     <!--test登录-->
+     <rule> 
+         <from>user/doLogin/([0-9a-zA-Z]+)/([0-9a-zA-Z]+).html$</from> 
+         <to>user/userAction!doLogin.htm?urlRewriteUrl=$1&amp;urlRewriteParam=$2</to> 
+     </rule> 
+     <!--test获得用户信息-->
+     <rule>
+		<from>user/([0-9a-zA-Z]+).html$</from>
+		<to>user/userAction!getUserInfo.htm?userId=$1</to>
+	 </rule>
+	 <!--注册页面-->
+	 <rule>
+		<from>^/register.html$</from>
+		<to>register/registerAction.htm</to>
+	 </rule>
+	 <!-- 检查验证码是否正确 -->
+	 <rule>
+		<from>register/checkVerification_code.html$</from>
+		<to>register/registerAction!checkVerification_code.htm</to>
+	 </rule>
+	 <!-- 检查用户名是否存在 -->
+	 <rule>
+		<from>register/findUserByUserName.html$</from>
+		<to>register/registerAction!findUserByUserName.htm</to>
+	 </rule>
+	 <!-- 注册保存 -->
+	 <rule>
+		<from>register/saveUser.html$</from>
+		<to>register/registerAction!save.htm</to>
+	 </rule>
+	 <!-- 检查邮箱是否存在 -->
+	 <rule>
+		<from>register/checkEmail.html$</from>
+		<to>register/registerAction!checkEmail.htm</to>
+	 </rule>
+	 <rule>
+		<from>register/checkMobile.html$</from>
+		<to>register/registerAction!checkMobile.htm</to>
+	 </rule>
+ </urlrewrite> 
+

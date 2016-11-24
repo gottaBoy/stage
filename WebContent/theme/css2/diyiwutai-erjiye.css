@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*top1-*/
+.an2{background:url(../images2/tu34.jpg) no-repeat;width:102px;height:37px;color:#fff;margin-right:10px}
+
+
+.top2{}
+/*top3*/
+.top3{background:#3a3e41;height:54px;}
+.top3-d li a:hover{background:#282d31}
+
+/*banner*/
+.ejy-banner{width:750px;height:350px;}
+
+
+.nex2{width:1003px;height:1950px;margin:0 auto;}
+/*左边开始*/
+.nex-left{width:248px;height:1500px;position:relative;}
+
+/*.ejy-left{width:372px;background:url(../images2/tu35.jpg) repeat-x;height:324px;}*/
+
+.ejy-fd{}
+.left-dh{width:248px;height:1940px;background-image:url(../images2/tu37-1.png);}
+.left-dh2{background:url(../images2/tu37.png) repeat-x;width:248px;height:1500px;}
+/*.left-fb{margin:10px 10px;}*/
+.left-fb img{width:108px;height:40px;margin:10px  0 10px 10px }
+
+.left-rc{background:url(../images2/tu41.jpg) no-repeat;width:238px;height:26px;line-height:26px;text-align:center;color:#fff;font-weight:bold;font-size:14px;margin-left:5px}
+/*.left-dl{width:226px;margin-left:3px;height:84px;border-bottom:1px solid #535353;padding-left:12px;}
+.left-dl dt{color:#ff5fc9;font-weight:bold;font-size:14px;line-height:30px;margin-top:10px;}
+.left-dl dd{width:202px;height:42px;}
+.left-dl dd a{color:#fff;display:block;padding: 0 10px;float:left;line-height:20px;}
+.left-dl dd a:hover{color:#0195c3ejy.left-dl dd a.aaa{color:#0195c3}*/
+
+.left-dl{width:226px;margin-left:3px;height:84px;padding-left:12px;}
+.left-dl li{height:35px;line-height:35px}
+.left-dl li a{color:#fff;font-size:14px}
+.left-dl li a:hover{color:#0195c3;text-decoration:underline}
+.child { display:none;}
+
+
+
+
+/*右边开始*/
+/*.ejy-right{width:838px;height:1952px;}
+.right-banner{widrh:838px;height:324px;}
+*/
+.nex-right{width:750px;height:1600px;margin-left:5px}
+
+
+/*右边部分*/
+.ejy-right{width:750px;height:100px;/*position: absolute;top:510px;left:380px;*/}
+.ejy{width:750px;height:50px;margin-top:15px}
+.ejy-rp{height:40px;line-height:40px;font-weight:bold;width:520px;}
+.ejy-rp a span{color:#09C}
+.ejy-rpp{height:40px;width:230px;}
+.ejy-rp2{width:746px;height:44px;border:1px solid #c1c1c1;background:url(../images2/tu43.jpg) repeat-x;line-height:44px;margin-bottom:15px;}
+.ejy-rp2 li{float:left;border-right:1px solid #c1c1c1;line-height:44px;}
+.ejy-rp2 li.jj{border-right:none;background:none;padding-left:8px;}
+.ejy-rp2 li a{display:block;padding-left:25px; padding-right:10px;}
+/* .astyle{display:block;padding:0 25px;} */
+.ejy-rp2 li.jj2 a{color: black;}
+/* .ejy-rp2 li.jj2 a:hover{background:url(../images2/tu48.jpg) repeat-x;} */
+.text3{width:45px;height:22px;line-height:22px; border:1px solid #C1C1C1;}
+.ejy-rp2 li.jj a span{color:#09F}
+/* .noclass{display: block;padding:0px 0px} */
+
+
+.ejy-rp3{width:749px;}
+.ejy-rp4{width:747px;border-left:1px solid #c2c2c2;border-right:1px solid #c2c2c2;height:1350px;}
+.ejy-rp5{width:747px;background:url(../images2/tu51.jpg) repeat-x;height:34px;}
+.ejy-rp5 li{float:left;line-height:34px;}
+.ejy-rp6{height:132px;border-bottom:1px solid #c1c1c1}
+
+.ejy-dl dt{float:left}
+.ejy-dl dd{float:left;width:130px;margin-left:10px;line-height:20px;}
+
+.comment_title{
+	width:60px;
+	display:block;
+	float:left;
+	
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+
+
+
+
+.ejy-fy{/*width:749px;*/height:60px;line-height:60px;/*float:right;*//*margin-top:10px*/}
+.ejy-fy a{padding:0 5px;}
+.ejy-fy a:hover{background:#09F;color:#fff}
+
+.ejy-fy a.ejy-fy2:hover {background:none;}
+
+/*.gg2{position: absolute;top:2000px;left:1180px;}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+

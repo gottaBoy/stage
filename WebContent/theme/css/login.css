@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* - - - - - - - - - 全局样式  - - - - - - - - -*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,address,code,
+del,em,img,dl,dt,dd,ol,ul,li,
+form,label/**,table,tbody,tfoot,thead,tr,th,td**/{
+margin:0;padding:0;border:0;
+font-style:inherit;font-family:inherit;}
+img{border:none;}
+body{font-size:12px;}
+ul,ol{ list-style-type:none;}
+a{ text-decoration:none; blr:expression_r(this.onFocus=this.blur())}
+/*链接样式*/
+a:link{ blr:expression_r(this.onFocus=this.blur())}	
+a:hover{text-decoration:underline;}	/*设置对象在其鼠标悬停时的样式表属性*/
+a:active{}  /*在鼠标点击与释放之间发生的事件*/
+a:visited{} /* 已被访问过时的样式表属性 */
+/*  - - - - - - - - - 类别样式  - - - - - - - - -*/
+
+
+.content_login{ width:1000px; height:auto; overflow:hidden; zoom:1; margin:0 auto;}
+.content_loginbt{ width:1000px; margin:48px 0 0 0; height:104px; border-bottom:solid 2px #bfbfbf;}
+.content_loginbt a.hong{ width:165px; height:50px; display:block; float:left; border:solid 7px #d61818; color:#d61818; text-align:center; font:normal 30px/50px "微软雅黑"; margin-left:30px; text-decoration:none;}
+.content_loginbt a.hei{ width:165px; height:50px; display:block; float:left; border:solid 7px #3a3e41; color:#3a3e41; text-align:center; font:normal 30px/50px "微软雅黑"; margin-left:30px; text-decoration:none;}
+.content_logincont{ width:1000px; height:auto; min-height:450px; overflow:hidden; zoom:1;}
+.content_logincont ul li{ height:auto; overflow:hidden; zoom:1; margin-bottom:30px;}
+.content_logincont ul li.meihua{ height:auto; overflow:hidden; zoom:1; margin-bottom:2px;}
+.content_logincont ul li div{ float:left; font:normal 24px/40px "微软雅黑"; color:#3a3e41; width:130px; text-align:right;}
+.content_logincont ul li input{ float:left; width:270px; height:36px;  font:normal 16px/36px "微软雅黑"; color:#4b4a4a; padding-left:10px; border:solid 2px #bfbfbf; outline:none;}
+.content_logincont ul li input.duan{ width:124px;}
+.content_logincont ul li input.gou{ margin-left:145px; width:16px; height:16px; border:none; margin-right:8px;}
+.content_logincont ul li input.yuan{ width:16px; height:16px; float:left; margin-top:4px; margin-right:8px;}
+.content_logincont ul li dd{ float:left; margin-right:20px; margin-top:0px;font:normal 14px "微软雅黑";}
+.content_logincont ul li font{ float:left; color:#999999;font:normal 12px "微软雅黑";}
+.content_logincont ul li p{ float:left; color:#999999;font:normal 12px/40px "微软雅黑"; margin-left:15px;}
+.content_logincont ul li a{ display:block; width:275px; height:46px; background:url(../images/tu17.jpg) no-repeat; text-align:center; font:normal 16px/46px "微软雅黑"; margin-left:145px; color:#d61818; }
+.content_logincont ul li a.tan{ float:left; color:#346af3; font:normal 12px "微软雅黑"; margin-left:60px; background:none; text-align:left;}
+.content_logincont ul li a.tann{ float:left; color:#346af3; font:normal 12px "微软雅黑"; margin-left:5px; background:none; text-align:left;}
+.content_logincont ul li a.xin{ float:left; color:#346af3; font:normal 14px/40px "微软雅黑"; background:none;margin-left:10px; text-align:left;}
+.content_logincont ul li dd.yanzheng{ float:left; margin-left:10px;}
+.content_logincont ul li select{ float:left; width:128px; height:36px;  font:normal 16px/36px "微软雅黑"; color:#4b4a4a; padding-left:10px; border:solid 2px #bfbfbf; outline:none; margin-right:26px;}
+
+
+/*注册03页面*/
+.register{ width:1000px; height:auto; overflow:hidden; zoom:1; margin-top:40px; margin-left:40px;}
+.register h2{ width:1000px; font:bold 40px/60px "微软雅黑"; color:#323232;}
+.register h2 span{ color:#e51616;}
+.register h3{ width:1000px; font: normal 24px/30px "微软雅黑"; color:#8d8d8d;}
+.register h3 span{ color:#e51616;}
+.register_fenlei{ width:1000px; height:auto; overflow:hidden; zoom:1; margin-top:10px;}
+.register_fenlei ul li{ margin-top:56px; width:860px; height:134px;}
+.register_fenlei ul li a.hong{ width:302px; height:118px; display:block; float:left; border:solid 7px #d61818; color:#d61818; text-align:center; font:normal 36px/118px "微软雅黑"; margin-left:30px; text-decoration:none; margin-right:20px;}
+.register_fenlei ul li a.hei{ width:302px; height:118px; display:block; float:left; border:solid 7px #3a3e41; color:#3a3e41; text-align:center; font:normal 36px/118px "微软雅黑"; margin-left:30px; text-decoration:none; margin-right:20px;}
+.register_fenlei ul li div{ float:left; color:#323232; font:normal 20px/30px "微软雅黑"; margin-top:20px;}
+.register_fenlei ul li div p{ color:#aaaaaa; font:normal 12px/30px "微软雅黑";}
+
+
+.login_touxiang h3{ font:normal 24px/40px "微软雅黑" ; color:#3a3e41; margin-left:30px; margin-top:25px;}
+
+.login_shangchuang{ width:1000px; height:auto; overflow:hidden; zoom:1; border-top: solid 2px #bfbfbf;}
+.login_shangchuanga{ margin-left:30px; margin-top:40px; color:#3a3e41; height:auto; overflow:hidden; zoom:1; }
+.login_shangchuanga a{ height:35px; float:left; font:normal 14px/35px "微软雅黑" ; background:url(../images/tu07.jpg) no-repeat; width:127px;margin-bottom:15px; padding-left:46px;}
+.login_shangchuanga p{ font:normal 24px/30px "微软雅黑" ; margin-bottom:15px;}
+.login_shangchuangb{ width:275px; height:275px; margin:10px 0 30px 30px;}
+.login_shangchuangc{ margin-bottom:55px; height:46px;}
+.login_shangchuangc a{ margin-left:30px; display:block; text-align:center; height:46px; width:275px; background:url(../images/tu17.jpg) no-repeat; color:#d61818; font:normal 20px/46px "微软雅黑" ;}

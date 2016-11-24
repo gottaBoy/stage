@@ -1,0 +1,3 @@
+use  no1stage;
+update t_app_menu set menuName='我是买家' where id=5;
+update t_app_menu set menuName='我是卖家' where id=32;

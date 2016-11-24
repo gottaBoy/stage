@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="JS代码,焦点图,JS广告代码,JS特效代码" />
+<meta name="description" content="jquery滑动文字覆盖图片效果，属于站长常用代码，更多焦点图代码请访问一流素材网JS代码频道。" />
+<title></title> 
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	var colour = $("#overlay");
+	var content = $("#hover");
+	
+	content.hide();
+	colour.hide();	
+		
+	$("#container").hover(function() {
+		content.stop().show().css({ "left" : "-242px" }).animate({left : 0}, 300);
+		colour.stop().fadeTo(242, .7)
+	}
+	,function() {
+		content.stop().animate({left : 242}, 300);
+		colour.stop().fadeTo(242, 0)
+	});
+});
+
+</script>
+<style type="text/css">
+body {
+	width:242px;height:222px;
+	margin:0;padding:0;
+	font-size:12px;
+    font-family: "微软雅黑";
+	}
+h1 {
+	font-size:12px;
+	font-weight:bold;
+	color:#d85a80;
+	}
+a {
+	color:#4de2e0;
+	text-decoration:none;
+	}
+img{margin:0;padding:0}	
+#container {
+	width:242px;
+	height:222px;
+	position:relative;
+	overflow:hidden;
+	z-index:0;
+	padding:0;
+	margin:0 auto;
+	background-image:url(tu26.jpg);
+	/*border:10px solid #414141;*/
+	}
+#container:hover {
+	border-color:#303030;
+	}
+#overlay {
+	background-color:#000;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:242px;
+	height:222px;
+	z-index:1;
+	}
+#hover {
+	width:200px;
+	display:block;
+	height:200px;
+	position:absolute;
+	z-index:3;
+	padding:15px;
+	}
+
+.pp {
+	
+	font-weight:normal;
+	}
+.pp a{color:#fff;line-height:18px}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="overlay">
+    </div>
+    <div id="hover">
+        <h1>一流素材网</h1>
+        <h1>等级</h1>
+        <div class="pp"><a>一流素材网-专注于提供网页素材下载，其内容涵盖网页素材，矢量素材，JS广告代码，小图片，网页背景，导航菜单，PNG图标等，让任何一个网页设计师都能轻松找到自己想要的素材</a></div>
+        <p style="float:right"><a href="" style="color:#3490b5;">联系他/她</a>
+<br/>
+</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>

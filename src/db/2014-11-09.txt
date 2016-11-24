@@ -1,0 +1,6 @@
+alter table `no1stage`.`t_app_information` 
+   add column `daiyu` varchar(200) NULL after `CreatTime`, 
+   add column `xueli` varchar(200) NULL after `daiyu`, 
+   add column `workYears` varchar(100) NULL after `xueli`, 
+   add column `workAddress` varchar(200) NULL after `workYears`, 
+   add column `zige` varchar(2000) NULL after `workAddress`

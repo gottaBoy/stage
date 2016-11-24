@@ -1,0 +1,3 @@
+alter table `no1stage`.`t_app_task` 
+   add column `provice` varchar(50) NULL after `applyEndDate`, 
+   add column `city` varchar(50) NULL after `provice`

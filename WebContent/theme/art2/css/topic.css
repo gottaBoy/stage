@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{font: 14px/1.8 "Microsoft YaHei",Arial;color:#666;word-wrap:break-word;word-break:break-all;background-color:#fff}
+abbr,article,aside,bb,datagrid,datalist,details,dialog,eventsource,figure,footer,header,mark,menu,meter,nav,output,progress,section,time{margin:0;padding:0;display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var,i,b{font-style: normal;}
+pre,code,kbd,samp,tt{font-family:"courier new",courier,monospace;font-size:100%;line-height:100%;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;font-weight:normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+button,input,select,textarea{font-size:100%;}
+a{text-decoration:none;color:#666;}
+a:hover{text-decoration:underline;}
+input,button{overflow:visible;outline: 0;border:0 none;}
+input,textarea{outline: 0;}
+img{vertical-align:top;border:0;}
+.clearfix:after,.content .box_bd:after{content:".";height:0;visibility:hidden;display:block;clear:both;font-size:0;line-height:0;}
+.clearfix{*zoom:1;}
+
+.banner img{min-width: 1100px;width: 100%;}
+.container{width: 1100px;margin: 0 auto;overflow: hidden;background: #fff;}
+.tab_lf{float: left;}
+.tab_rg{float: right;}
+.center{text-align: center;}
+.mar{margin: 40px auto;}
+.mar60{margin: 60px auto;}
+.tab{width: 525px;height: 200px;padding:5px;margin:40px 0;background: #040c17;}
+.tab_act{background: #c67413;}
+.tab_con { display:none;}
+.tab_con.active{ display:block;}
+
+/*相册1*/
+.box-slider{width:1070px; position:relative; padding:10px; margin:40px auto; border:1px solid #ede9e9;box-shadow:0px 1px 5px #CCCCCC}
+.btn{position:absolute;padding-top:200px;width:75px; height:205px; cursor:pointer; text-indent:-999em;}
+.pre{ background:url(../img/left.png) no-repeat 0 200px; left:0px;}
+.next{background:url(../img/right.png) no-repeat 0 200px;right:0px;}
+#ztbox {width:100%; position:relative; height:140px;}
+.spic{ width:1070px; position:relative; background:#f9f9f9; padding-top:6px; height:130px;}
+#left {width:13px; height:70px; float:left; top:25px; position:absolute; left:4px; cursor:pointer; background:url(../img/left.gif) no-repeat; }
+#right{ width:13px; height:70px; right:4px; top:25px; position:absolute;cursor:pointer; background:url(../img/right.gif) no-repeat; }
+#conter{ margin-left:20px; width:1030px; position:relative; height:105px; float:left; display:inline; overflow:hidden; }
+#conter ul { width:auto; height:105px; overflow:hidden; top:0px; left:0px; position:absolute; }
+#conter li{ width:140px; cursor:pointer; height:102px; float:left; border:1px solid #eaeaea; display:inline; margin:0 0 0 8px; }
+#conter li b,#conter li strong{ font-weight:normal;}
+#conter li.on{border:2px solid #c67413; }
+#conter li.on span{ background:#898989; color:#fff;}
+#conter li img{ width:140px; height:85px; float:left; overflow:hidden;}
+#conter li span{ display:block; width:100%; line-height:17px; color:#797979; float:left; height:17px; overflow:hidden; background:#eaeaea; text-align:center;font-size: 12px; }
+#scroll{ background:url(../img/line.gif) repeat-x left bottom; width:1070px; height:13px; left:0px; bottom:14px; cursor:pointer; position:absolute;  }
+#scroll span { width:142px; height:13px; left:0px; bottom:0px; cursor:pointer; position:absolute; background:url(../img/scrollBg.png) no-repeat; }
+.bpic{ width:100%;height: 100%; margin:0 auto 0 auto; }
+.bigpic{ width:100%; position:relative; margin-bottom:10px;background: #fafafa;}
+
+/*相册2*/
+.mod18Box { padding: 10px; border: 1px solid #ede9e9;margin:40px auto; width: 1070px; background: #FFF; box-shadow:0px 1px 5px #CCCCCC }
+.mod18{ width: 1070px; height: 570px; margin: 0px auto; position: relative; background: #f7f7f7; }
+.mod18 .btn2{position:absolute;width:15px;height:70px;bottom:20px;cursor:pointer;z-index:99;font-size:50px;font-weight:bold;}
+.mod18 .prev2{left:5px;background:url(../img/left.gif) no-repeat;}
+.mod18 #prevTop2,.mod18 #nextTop2{top:180px;width:75px;height:75px;}
+.mod18 #prevTop2{background:url(../img/left.png) 0 0 no-repeat;}
+.mod18 #nextTop2{background:url(../img/right.png) 0 0 no-repeat;}
+.mod18 .next2{right:5px;background:url(../img/right.gif) no-repeat;}
+.mod18 li{float:left;}
+.mod18 .cf li{position:relative;color:#fff;}
+.mod18 .cf a{display:block;width:680px;height:450px;position:absolute;color:#fff;}
+.mod18 .cf li span{display:block;width:640px;position:absolute;left:0;bottom:0;padding:10px 20px;line-height:22px;text-align:left;background:rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = "#60000000",endColorstr = "#60000000");}
+.mod18 .picBox{height:450px;position:relative;overflow:hidden;}
+.mod18 .picBox ul{height:450px;position:absolute;}
+.mod18 .picBox li{width:1070px;height:450px;}
+.mod18 .listBox{ width: 1020px; height: 90px; margin: 10px auto; position: relative; padding: 6px 0 0px; overflow: hidden; }
+.mod18 .listBox ul{height:100px;position:absolute;}
+.mod18 .listBox li{width:122px;height:88px;margin:0 10px;cursor:pointer;position:relative;border:1px solid #eaeaea;}
+.mod18 .listBox li i{display:none;}
+.mod18 .listBox li a{display:block;width:124px;height:90px;}
+.mod18 .listBox li img{width:114px;height:90px;}
+.mod18 .listBox .on img{width:120px;height:85px;border:2px solid #ff6600;}
+.mod18 .listBox .on i{display:block;}
+
+/**/
+.tc{border: 1px solid #fff;}
+.tc:hover{border: 1px solid #c67413;-moz-box-shadow:0px 0px 5px #c67413; -webkit-box-shadow:0px 0px 5px #c67413; box-shadow:0px 0px 5px #c67413;}
+.tc1{margin-right: 70px;}
+
+/*footer*/
+.footer{height: 120px;background: #1e1e1e;text-align: center;color:#909090;}
+.footer .foot_top{height: 70px;border-bottom: 1px solid #3f3f3f;}
+.footer .foot_top a{display: inline-block;color: #909090;line-height: 80px;padding: 0 8px;text-decoration: none;}
+.footer p{height: 50px;line-height: 50px;font-size: 12px;}
+.why{height:573px;background: url(../img/erro_Icon12.gif) no-repeat center;position: relative;}
+.why .why1{position: absolute;left: 35px; top:70px;}
+.why .why2{position: absolute;left: 210px; top:93px;}
+.why .why3{position: absolute;left: 425px; bottom:0px;}
+.why .why4{position: absolute;right:335px; top:30px;}
+.why .why5{position: absolute;right: 0px; top:70px;}
+
+.zp {overflow: hidden;}
+.zp span{float: left;}
+.zp .spanMin{width: 220px;position: relative;}
+.zp .spanMin .sM7{position: absolute;top: 140px;left: 8px; }
+.zp .spanMin .sM7:hover{
+	-moz-transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	-moz-transform-origin:0% 0%;
+	-webkit-transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	-webkit-transform-origin:0% 0%;
+	-o-transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	-o-transform-origin:0% 0%;
+	transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	transform-origin:0% 0%;
+
+}
+.zp .spanMin .sM8{position: absolute;left:15px;top:140px;}
+.zp .spanMin .sM8:hover{
+	-moz-transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	-moz-transform-origin:0% 0%;
+	-webkit-transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	-webkit-transform-origin:0% 0%;
+	-o-transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	-o-transform-origin:0% 0%;
+	transform:rotate(0deg) scale(1.00,1.00) translate(20px,0px) skew(0deg,0deg);
+	transform-origin:0% 0%;}
+.why1 img:hover{
+	transform:rotate(7deg);
+	-ms-transform:rotate(7deg); 	/* IE 9 */
+	-moz-transform:rotate(7deg); 	/* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+	-o-transform:rotate(7deg); 
+}
+.why3 img:hover{
+	transform:rotate(7deg);
+	-ms-transform:rotate(7deg); 	/* IE 9 */
+	-moz-transform:rotate(7deg); 	/* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+	-o-transform:rotate(7deg); 
+}
+.why4 img:hover{
+	transform:rotate(7deg);
+	-ms-transform:rotate(7deg); 	/* IE 9 */
+	-moz-transform:rotate(7deg); 	/* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+	-o-transform:rotate(7deg); 
+}

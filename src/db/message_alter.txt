@@ -1,0 +1,3 @@
+use  no1stage;
+alter table `no1stage`.`t_app_message` add column `sendType` TINYINT(1) default 0;
+update `t_app_message` set sendType=1;

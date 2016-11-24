@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#content{ padding:0; margin:0 auto; width:98%}
+.D_table{font-size:12px;color:808284; background-color:#E1E1E1; border:0}
+.D_bt{ repeat-x;height:32px; font-size:14px; color: #BD0000; font-weight:bold;vertical-align: middle;text-align: center;}
+
+.D_bt a:link,.D_bt a:visited{text-decoration:none;color:#666}
+.D_bt a:hover{text-decoration:none;color:#F00;}
+
+  a.date_sj:link {font-family:"宋体"; font-size:12px; padding-left:4px; padding-top:2px; text-decoration: none;color: #464646;line-height:18px; text-align:left;}
+  a.date_sj:visited {font-family:"宋体"; font-size:12px; padding-left:4px; padding-top:2px; text-decoration: none;line-height:18px; text-align:left; color: #464646;}
+  a.date_sj:hover {font-family:"宋体"; font-size:12px; color:#D12127; text-decoration: none;}
+
+.week{ background-color:#EBEBEB; text-align:center; height:26px; font-weight:bold；vertical-align:middle;line-height: 26px}
+.week b{ color:#FF0000;}
+.week em{ font-style:normal; color:#996600}
+
+.today{ width:10%; height:110px; padding:0px; margin:0px; vertical-align:top; background:url(../images/currentToday.png) repeat-x bottom;}
+.dd{width:10%; height:110px; padding:0px; margin:0px; vertical-align:top; background-position:bottom}
+.dd1{width:10%; height:110px; padding:0px; margin:0px; vertical-align:top; background-position:bottom}
+.red{ color:#FF0000;}
+.green{ color:#996600;}
+.db{height:20px; border-bottom:1px solid #DBDBDB;background: #F1F2F2;margin:0px;}
+.kb{ background:url(../images/kongban.png) repeat-x bottom;}
+
+.yl{float:left; width:20px;padding:3px 0 0 0!important;padding:2px 0 0 0}
+.nl{float:right;width:40px;padding:2px 0 0 0!important;padding:3px 0 0 0}

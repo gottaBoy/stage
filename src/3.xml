@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant> 
+	
+	 
+	<package name="user" namespace="/user" extends="struts-default">
+		<action name="userAction" class="com.smt.webapp.web.user.UserAction">
+			<result type="redirect">/index.html</result>
+			<result name="passWord">/WEB-INF/page/user/updatePassword.jsp</result>
+			<result name="email">/WEB-INF/page/user/updateEmail.jsp</result>
+			<result name="goTestIndex">/WEB-INF/page/test/index2.jsp</result>
+		</action>
+	</package>                       
+	<package name="index" namespace="" extends="struts-default">
+		<action name="download" class="com.smt.webapp.web.member.DownloadAction">
+            <result name="success" type="stream">
+				 <!-- 下载文件类型定义 --> 
+			     <param name="contentType">application/octet-stream</param>
+				 <!-- 下载文件输出流定义 --> 
+			     <param name="inputName">inputStream</param>
+			     <!-- 下载文件处理方式 --> 　　　　　　　　　　　　　　　　
+			     <param name="contentDisposition">attachment;filename="${fileName}"</param>
+			     <!-- 下载文件的缓冲大小 -->
+			     <param name="bufferSize">4096</param>
+			</result>
+        </action>
+	    <action name="indexCompany" class="com.smt.webapp.web.member.UserInfoAction" method="getIndexCompany">
+			<result name="indexCompany">/WEB-INF/page/public/indexCompany.jsp</result>
+		</action>
+				<action name="ejybanner" class="com.smt.webapp.web.member.EjybannerAction">
+			<result>/ziye-banner/ziye.jsp</result>
+		</action>
+		<action name="banner" class="com.smt.webapp.web.member.BannerAction">
+			<result>/banner/banner.jsp</result>
+		</action>
+		<action name="indexAction" class="com.smt.webapp.web.IndexAction">
+			<result>/WEB-INF/page/public/profession2.jsp?prof=${prof}</result>
+			<result name="top">/WEB-INF/page/public/top.jsp</result>
+			<result name="indexCompany">/WEB-INF/page/public/indexCompany.jsp</result>
+			<result name="index">/WEB-INF/page/index.jsp</result>
+			<result name="login">/WEB-INF/page/login2.jsp</result>
+			<result name="windowLogin">/WEB-INF/page/windowLogin.jsp</result>
+		</action>
+		<action name="index3Action" class="com.smt.webapp.web.Index3Action">
+			<result>/WEB-INF/page/public/profession3.jsp?prof=${prof}</result>
+			<result name="indexCompany">/WEB-INF/page/public/indexCompany3.jsp</result>
+		</action>
+		<action name="userDetailTop3cost" class="com.smt.webapp.web.IndexAction" method="userDetailTop3cost">
+			<result name="userDetailTop3cost">/WEB-INF/page/public/userDetailTop3cost.jsp</result>
+		</action>
+		<action name="messageSend" class="com.smt.webapp.web.member.MessageAction">
+			<result name="send">/WEB-INF/page/public/send.jsp</result>
+		</action>
+		<action name="taskAction" class="com.smt.webapp.web.member.TaskAction" method="getAllTask">
+			<result name="indexTask">/WEB-INF/page/public/indexTask.jsp</result>
+		</action>
+		<action name="presonList" class="com.smt.webapp.web.presonList.PresonList">
+			<result>/WEB-INF/page/user/presonalList2.jsp</result>
+			<result name="userBaseInfo">/WEB-INF/page/user/presonalList2_xinxi.jsp</result>
+			<result name="userZuopin">/WEB-INF/page/user/presonalList2_zuopin.jsp</result>
+			<result name="userSaleRemarks">/WEB-INF/page/user/presonalList2_pinjia.jsp</result>
+			<result name="userSaleRecords">/WEB-INF/page/user/presonalList2_jilu.jsp</result>
+			<result name="userFriends">/WEB-INF/page/user/presonalList2_friends.jsp</result>
+			
+			<result name="userPhoto">/WEB-INF/page/user/userPhoto.jsp</result>
+			
+			<result name="userMovie">/WEB-INF/page/user/userMovie.jsp</result>
+			<result name="userVedio">/WEB-INF/page/user/userVedio.jsp</result>
+			<result name="imageView">/WEB-INF/page/user/imageView.jsp</result>
+			<result name="updateView">/WEB-INF/page/user/updateCY.jsp</result>
+			<result name="addevaluate">/WEB-INF/page/user/addevaluate.jsp</result>
+		</action>
+		<action name="orgListAction2" class="com.smt.webapp.web.presonList.OrgListAction">
+			<result>/WEB-INF/page/org/qyyh_det2.jsp</result>
+		</action>
+		<action name="orgListAction" class="com.smt.webapp.web.presonList.OrgListAction"  method="execute2">
+			<result name="orgBaseInfo">/WEB-INF/page/org/orgList2_xinxi.jsp</result>
+			<result name="orgZuopin">/WEB-INF/page/org/orgList2_zuopin.jsp</result>
+			<result name="orgService">/WEB-INF/page/org/orgList2_service.jsp</result>
+			<result name="orgZhaoPin">/WEB-INF/page/org/orgList2_zhaopin.jsp</result>
+			<result name="orgFriends">/WEB-INF/page/org/orgList2_friends.jsp</result>			
+			<result name="orgServiceDetail">/WEB-INF/page/org/orgList2_service_detail.jsp</result>			
+		</action>
+		<action name="qyList1" class="com.smt.webapp.web.presonList.QyList">
+			<result>/WEB-INF/page/org/qyList.jsp</result>
+		</action>
+		<action name="loginHtml" class="com.smt.webapp.web.presonList.LoginHtml">
+			<result>/WEB-INF/page/org/login1.jsp</result>
+		</action>
+		<action name="schedule" class="com.smt.webapp.web.member.ScheduleInfoAction" method="showScheduleInfo">
+			<result name="showSch">/WEB-INF/page/public/calendar.jsp</result>
+		</action>
+		
+		<action name="userViewTop" class="com.smt.webapp.web.presonList.PresonList" method="userViewTop">
+			<result name="userViewTop">/WEB-INF/page/public/userViewTop.jsp</result>
+		</action>
+		<action name="userViewLeft" class="com.smt.webapp.web.presonList.PresonList" method="userViewLeft">
+			<result name="userViewLeft">/WEB-INF/page/public/userViewLeft.jsp</result>
+		</action>
+		<action name="friend" class="com.smt.webapp.web.member.FriendInfoAction">
+		</action>
+			<action name="ok" class="com.smt.webapp.web.register.RegisterAction">
+			<result>/WEB-INF/page/register/success.jsp</result>
+		</action>
+		<action name="growth" class="com.smt.webapp.web.member.GrowthAction">
+			<result name="toGrowth">/WEB-INF/page/growth/growthView.jsp</result>
+		</action>
+	</package>
+	<package name="member" namespace="/member" extends="struts-default">
+		<action name="role" class="com.smt.webapp.web.role.RoleAction">
+			<result name="getRoleList">/WEB-INF/page/role/roleList.jsp</result>
+			<result name="toAddUpdateRole">/WEB-INF/page/role/addRole.jsp</result>
+			<result name="toViewRole">/WEB-INF/page/role/viewRole.jsp</result>
+			<result name="getUserList">/WEB-INF/page/role/getUserList.jsp</result>
+		</action>
+		
+		<action name="top" class="com.smt.webapp.web.member.TopAction">
+			<result>/WEB-INF/page/top/top_list.jsp</result>
+			<result name="showAddView">/WEB-INF/page/top/top_add.jsp</result>
+			<result name="save" type="redirect">/member/top.htm</result>
+			<result name="edit">/WEB-INF/page/top/top_edit.jsp</result>
+			<result name="index">/tab/tab4.jsp</result>
+		</action>
+		<action name="business" class="com.smt.webapp.web.member.BusinessInfoAction">
+			<result name="myBuyerList" >/WEB-INF/page/business/myBuyerList.jsp</result>
+			<result name="mySellerList" >/WEB-INF/page/business/mySellerList.jsp</result>
+			<result name="toBusinessView" >/WEB-INF/page/business/businessView.jsp</result>
+			<result name="toOrder" >/WEB-INF/page/business/order.jsp</result>
+			<result name="toMyCar" >/WEB-INF/page/business/myCar.jsp</result>
+			<result name="toUploadFile">/WEB-INF/page/business/orderFile.jsp</result>
+			
+			
+			<result name="confirmOrder" >/alipay/confirmOrder.jsp</result>
+			<result name="goAlipay" >/alipay/goAlipay.jsp</result>
+			<result name="returnUrl" >/alipay/return_url.jsp</result>
+			
+			<result name="payList" >/WEB-INF/page/business/payList.jsp</result>
+			<result name="toPay" >/alipay/toPay.jsp</result>
+			<result name="goAgreement" >/WEB-INF/page/business/agreement.jsp</result>
+			<result name="confirmPay" >/WEB-INF/page/business/confirmPay.jsp</result>
+			<result name="updatePayTime" >/WEB-INF/page/business/updatePayTime.jsp</result>
+		</action>
+		<action name="poster" class="com.smt.webapp.web.member.PosterAction">
+			<result>/WEB-INF/page/poster/poster.jsp</result>
+			<result name="add">/WEB-INF/page/poster/add_poster.jsp</result>
+			<result name="edit">/WEB-INF/page/poster/edit_poster.jsp</result>
+			<result name="paging_add">/WEB-INF/page/poster/paging_add_poster.jsp</result>
+			<result name="paging_edit">/WEB-INF/page/poster/paging_edit_poster.jsp</result>
+			<result name="redirect" type="redirectAction">poster.htm?type=${type}</result>
+			<result name="paging_redirect" type="redirectAction">poster!paging.htm?type=${type}</result>
+			<result name="paging_list">/WEB-INF/page/poster/paging_poster.jsp</result>
+		</action>
+		
+		<action name="drawback" class="com.smt.webapp.web.member.DrawbackInfoAction">
+			<result name="myDrawback" >/WEB-INF/page/drawback/myDrawback.jsp</result>
+			<result name="addDrawback" >/WEB-INF/page/drawback/addDrawback.jsp</result>
+			<result name="editDrawback" >/WEB-INF/page/drawback/editDrawback.jsp</result>
+			<result name="toDrawbackView" >/WEB-INF/page/drawback/drawbackView.jsp</result>
+			<result name="confirmDrawback" >/alipay/confirmDrawback.jsp</result>
+			<result name="drawbackList" >/WEB-INF/page/drawback/drawbackList.jsp</result>
+			<result name="toPay" >/alipay/toPay1.jsp</result>
+		</action>
+		<action name="evaluate" class="com.smt.webapp.web.member.BusinessEvaluateAction">
+			<result name="myEvaluate" >/WEB-INF/page/evaluate/myEvaluate.jsp</result>
+			<result name="addEvaluate" >/WEB-INF/page/evaluate/addEvaluate.jsp</result>
+			<result name="addYrEvaluate" >/WEB-INF/page/evaluate/addYrEvaluate.jsp</result>
+			<result name="viewEvaluate" >/WEB-INF/page/evaluate/viewEvaluate.jsp</result>
+			<result name="viewYrEvaluate" >/WEB-INF/page/evaluate/viewYrEvaluate.jsp</result>
+			<result name="image1" >/WEB-INF/page/org/indexImg.jsp</result>
+			<result name="image2" >/WEB-INF/page/org/indexImg1.jsp</result>
+			<result name="image3" >/WEB-INF/page/org/indexImg3.jsp</result>
+			
+		</action>
+
+		<action name="userinfo" class="com.smt.webapp.web.member.UserInfoAction">
+			<result>/WEB-INF/page/user/userInfo.jsp</result>
+			<result name="nor_userInfo">/WEB-INF/page/user/nor_userInfo.jsp</result>
+			<result name="register02">/WEB-INF/page/user/register02.jsp</result>
+			<result name="registerSoon">/WEB-INF/page/user/registerSoon.jsp</result>
+			<result name="qurey" type="redirect">/member/userinfo.htm?sign=${sign}</result>
+			<result name="userattestation" >/WEB-INF/page/user/userAttestation.jsp</result>
+			<result name="usermanager" >/WEB-INF/page/user/userManager.jsp</result>
+			<result name="norusermanager" >/WEB-INF/page/user/nor_userManager.jsp</result>
+			<result name="companymanager" >/WEB-INF/page/user/companyManager.jsp</result>
+			<result name="intro" >/WEB-INF/page/user/userIntro.jsp</result>
+			<result name="vocation" >/WEB-INF/page/cost/vocation-oriented.jsp</result>
+			<result name="realName" >/WEB-INF/page/user/real-name.jsp</result>
+			<result name="protrait" >/WEB-INF/page/user/portrait-editor.jsp</result>
+			<result name="anypic" >/WEB-INF/page/user/anypic-editor.jsp</result>
+			<result name="orgProtrait" >/member/orginfo.htm?sign=2</result>
+			<result name="userProtrait" >/member/userinfo.htm?sign=4</result>
+			
+			<result name="indexImg" >/WEB-INF/page/user/indexImg.jsp</result>
+			<result name="indexOrgImg" >/WEB-INF/page/org/org_indexImg.jsp</result>
+			<result name="growth" >/WEB-INF/page/growth/growth1.jsp</result>
+			<result name="toUserInfoView" >/WEB-INF/page/user/userInfoView.jsp</result>
+			<result name="toUserInfoOrg" >/WEB-INF/page/org/userInfoView.jsp</result>
+			<result name="toCompanyInfoView" >/WEB-INF/page/user/companyInfoView.jsp</result>
+			<result name="companyattestation" >/WEB-INF/page/user/companyAttestation.jsp</result>
+			<result name="toUpdateAlipay" >/WEB-INF/page/business/updateAlipay.jsp</result>
+			<result name="toUserShare" >/WEB-INF/page/user/userShare.jsp</result>
+			<result name="xiangce">/WEB-INF/page/user/xiangCe.jsp</result>
+			<result name="shipin">/WEB-INF/page/user/shiPin.jsp</result>
+			
+			
+		</action>
+		
+		
+		<action name="yrinfo" class="com.smt.webapp.web.member.Yrinfo">
+			<result>/WEB-INF/page/org/yrManager.jsp</result>
+			</action>
+		
+		<action name="activeStarInfo" class="com.smt.webapp.web.member.ActiveStarAction">
+			<result >/WEB-INF/page/org/activeStarInfo.jsp</result>
+		</action>
+		<action name="newManInfo" class="com.smt.webapp.web.member.NewManAction">
+			<result >/WEB-INF/page/org/newManInfo.jsp</result>
+		</action>
+		<action name="starInfo" class="com.smt.webapp.web.member.StarInfoAction">
+			<result>/WEB-INF/page/org/starInfo.jsp</result>
+			
+		</action>
+		<action name="orginfo" class="com.smt.webapp.web.member.OrgAction">
+			<result>/WEB-INF/page/org/orgInfo.jsp</result>
+			<result name="QYRZ">/WEB-INF/page/org/orgReal-name.jsp</result>
+			<result name="QYTXXG">/WEB-INF/page/org/orgPortrait-editor.jsp</result>
+			<result name="ORG_USERINFO">/WEB-INF/page/org/org_userInfo.jsp</result>
+			<result name="ORG_USERINTRO">/WEB-INF/page/org/org_userIntro.jsp</result>
+			<result name="ORG_VOCATION">/WEB-INF/page/org/org_vocation-oriented.jsp</result>
+			<result name="ORG_GROWTH">/WEB-INF/page/org/org_growthView.jsp</result>
+			<result name="ORG_PORTRAIT">/WEB-INF/page/org/org_portrait-editor.jsp</result>
+			<result name="ORG_INDEXIMG">/WEB-INF/page/org/org_indexImg.jsp</result>
+			<result name="BDZFB">/WEB-INF/page/org/updateAlipay.jsp</result>
+			<result name="BDZFB1">/WEB-INF/page/org/updateAlipay1.jsp</result>
+		</action>
+		<action name="friendInfo" class="com.smt.webapp.web.member.FriendInfoAction">
+			<result>/WEB-INF/page/friend/friendInfo.jsp</result>
+			<result name="delFriendInfo">/member/friendInfo!toFriendInfo.htm</result>
+			<result name="addFriendInfo">/member/friendInfo!toFriendInfo.htm</result>
+		</action>
+		<action name="message" class="com.smt.webapp.web.member.MessageAction">
+			<result>/WEB-INF/page/message/message.jsp</result>
+			<result name="toAddMessage">/WEB-INF/page/message/addMessage.jsp</result>
+			<result name="toMessageView">/WEB-INF/page/message/messageView.jsp</result>
+			<result name="delMessage">/member/message!toMessage.htm</result>
+		</action>
+		<action name="scheduleInfo" class="com.smt.webapp.web.member.ScheduleInfoAction">
+			<result name="toScheduleInfo">/WEB-INF/page/schedule/scheduleInfo.jsp</result>
+			<result name="orgScheduleInfo">/WEB-INF/page/org/scheduleInfo.jsp</result>
+			<result name="toUpdateScheduleInfo">/WEB-INF/page/schedule/updateScheduleInfo.jsp</result>
+			<result name="updateScheduleInfo">/member/scheduleInfo!toScheduleInfo.htm</result>
+			<result name="toAddScheduleInfo">/WEB-INF/page/schedule/addScheduleInfo.jsp</result>
+			<result name="addScheduleInfo">/member/scheduleInfo!toScheduleInfo.htm</result>
+			<result name="delScheduleInfo">/member/scheduleInfo!toScheduleInfo.htm</result>
+		</action>
+		<action name="growth" class="com.smt.webapp.web.member.GrowthAction">
+			<result>/WEB-INF/page/growth/growth1.jsp</result>
+			<result name="toGrowth">/WEB-INF/page/growth/addGrowth.jsp</result>
+		</action>
+		<action name="information" class="com.smt.webapp.web.member.InformationAction">
+			<result>/WEB-INF/page/information/information.jsp</result>
+			<result name="toAdd">/WEB-INF/page/information/addInfo.jsp</result>
+			<result name="toEdit">/WEB-INF/page/information/editInfo.jsp</result>
+			<result name="toView">/WEB-INF/page/information/viewInfo.jsp</result>
+			<result  name="bottom">/WEB-INF/page/public/bottom_detail.jsp</result>
+		</action>
+		<action name="artInfo" class="com.smt.webapp.web.member.ArtInfoAction">
+			<result>/WEB-INF/page/artInfo/index.jsp</result>
+			<result name="toAddArtInfo">/WEB-INF/page/artInfo/addArtInfo.jsp</result>
+			<result name="toIndex" type="redirect">/member/artInfo!toArtInfo.htm</result>
+			<result name="toUpdateArtInfo">/WEB-INF/page/artInfo/addArtInfo.jsp</result>
+			<result name="toUpdateImgInfo">/WEB-INF/page/artInfo/addImgInfo.jsp</result>
+			<result name="saveOrUpdateArtInfo">/member/artInfo!toArtInfo.htm</result>
+			<result name="saveOrUpdateArtInfo1">/WEB-INF/page/user/updateCY1.jsp</result>
+			<result name="image">/WEB-INF/page/artInfo/imageView.jsp</result>
+			<result name="upImg">/page/imgUp.jsp</result>
+			<result name="ORGIMAGE">/WEB-INF/page/org/imageView.jsp</result>
+			<result name="ORGSUCCESS">/WEB-INF/page/org/photo.jsp</result>
+			<result name="ORGmovie">/WEB-INF/page/org/movie.jsp</result>
+			<result name="ORGvoice">/WEB-INF/page/org/voice.jsp</result>
+			<result name="movie">/WEB-INF/page/artInfo/movie.jsp</result>
+			<result name="zhaoPin">/WEB-INF/page/org/org_zhaopin.jsp</result>
+			<result name="voice">/WEB-INF/page/artInfo/voice.jsp</result>
+			<result name="photo">/WEB-INF/page/artInfo/artInfo.jsp</result>
+			<result name="photo1">/WEB-INF/page/org/zuopin.jsp</result>
+			<result name="toTab5">/tab/tab5.jsp</result>
+		</action>
+		<action name="menuHyzx" class="com.smt.webapp.web.menu.MenuAction">
+			<result>/WEB-INF/page/public/left_menu.jsp</result>
+		</action>
+		<action name="menuOrg" class="com.smt.webapp.web.menu.MenuAction" method="orgMenu">
+			<result name="ORGMENU">/WEB-INF/page/public/left_menu.jsp</result>
+		</action>
+		<action name="task" class="com.smt.webapp.web.member.TaskAction">
+			<result>/WEB-INF/page/task/task1.jsp</result>
+			<result name="toTask">/WEB-INF/page/task/addTask.jsp</result>
+			<result name="toPersonTask">/WEB-INF/page/task/personTask.jsp</result>
+			<result name="toTaskList">/WEB-INF/page/task/taskList.jsp</result>
+			<result name="toView1">/WEB-INF/page/task/viewTask1.jsp</result>
+			<result name="toView2">/WEB-INF/page/task/viewTask2.jsp</result>
+			<result name="toAddUserTask">/WEB-INF/page/task/addUserTask.jsp</result>
+			<result name="toUpdateUserTask">/WEB-INF/page/task/updateUserTask.jsp</result>
+			<result name="toUpdateUserTask2">/WEB-INF/page/task/updateUserTask2.jsp</result>
+			<result name="addUserTask">/member/task.htm</result>
+			<result name="updateUserTask">/member/task.htm</result>
+			<result name="delUserTask">/member/task.htm</result>
+			<result name="wtwmTaskSuccess">/WEB-INF/page/task/wtwmTaskSuccess.jsp</result>
+			<result name="wtwmTaskError">/WEB-INF/page/task/wtwmTaskError.jsp</result>
+			<result name="verifyList">/WEB-INF/page/task/verify_list.jsp</result>
+			<result name="addTaskByOrg">/WEB-INF/page/task/addTaskByOrg.jsp</result>
+		</action>
+		<action name="cost" class="com.smt.webapp.web.member.CostAction">
+			<result>/WEB-INF/page/cost/vocation-oriented.jsp</result>
+			<result name="toAdd">/WEB-INF/page/cost/addCost.jsp</result>
+			<result name="toAddCostByJs">/WEB-INF/page/cost/toAddCostByJs.jsp</result>
+			
+			<result name="toUpdate">/WEB-INF/page/cost/editCost.jsp</result>
+			<result name="toOrgAdd">/WEB-INF/page/org/addCost.jsp</result>
+			<result name="toOrgUpdate">/WEB-INF/page/org/editCost.jsp</result>
+		</action>
+
+	</package>
+    <package name="register" namespace="/register" extends="struts-default">
+		<action name="registerAction" class="com.smt.webapp.web.register.RegisterAction">
+			<result>/WEB-INF/page/register/register.jsp</result>
+			<result name="SAVE_SUCCESS">/index/ok.htm</result>
+			<result name="success3">/WEB-INF/page/register/success3.jsp</result>
+			<result name="toFindPassword">/WEB-INF/page/register/find_password.jsp</result>
+			<result name="findPassword_ok">/WEB-INF/page/register/find_password_ok.jsp</result>
+			<result name="findPassword_error">/WEB-INF/page/register/find_password_error.jsp</result>
+			<result name="reg">/WEB-INF/page/public/regProtocol.jsp</result>
+		</action>
+	</package>
+	<package name="query" namespace="/query" extends="struts-default">
+		<action name="queryAction" class="com.smt.webapp.web.query.QueryAction">
+			<result>/WEB-INF/page/public/queryList2.jsp</result>
+		</action>
+	</package>
+	<package name="about" namespace="/about" extends="struts-default">
+		<action name="about" class="com.smt.webapp.web.AboutAction">
+			<result>/WEB-INF/page/public/bottom_information.jsp</result>
+			<result name="toAbout">/WEB-INF/page/public/about.jsp</result>
+		</action>
+	</package>
+	<package name="taskMore" namespace="/taskMore" extends="struts-default">
+		<action name="taskMore" class="com.smt.webapp.web.member.TaskAction" >
+			<result name="toTaskMore">/WEB-INF/page/public/taskMore.jsp</result>
+			<result name="toTaskMoreDetail">/WEB-INF/page/public/taskMoreDetail.jsp</result>
+		</action>
+	</package>
+	
+	
+</struts>

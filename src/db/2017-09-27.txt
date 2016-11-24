@@ -1,0 +1,9 @@
+alter table `no1stage`.`t_app_art_info` 
+   add column `img` varchar(100) NULL after `evaluate`;
+
+alter table `no1stage`.`t_app_user` 
+   add column `applicate` int(1) default 0 after `roleId`;
+
+INSERT INTO `no1stage`.`t_app_menu`(`id`,`menuNo`,`menuName`,`menuLevel`,`active`,`link`) VALUES ( '34','100','观众用户申请','2','1','');
+
+INSERT INTO `no1stage`.`t_app_role_authority`(`id`,`roleId`,`menuId`) VALUES ( '100','1','100');

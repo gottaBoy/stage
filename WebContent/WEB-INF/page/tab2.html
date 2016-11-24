@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tab切换</title>
+<style type="text/css">
+body{margin:0;padding:0;font-size:12px;font-family:"微软雅黑";margin:0 auto;width:630px;}
+a{color:#000; text-decoration:none;}
+ul{padding:0; margin:0; list-style:none; }
+.l{float:left}
+img,input{border:0;}
+form,ul,li,dl,dd,p,dt,img{margin:0;padding:0;}
+img{border:none;}
+.bj{width:626px;border-top:5px solid #f80000;background:#fff}
+#box{width:620px;height:36px;border-bottom:1px solid #ccc;padding-top:10px}
+#box li{float:left;background:url(images/tu63.jpg) repeat-x;width:113px;height:37px;margin-left:15px;}
+#box li a{display:block;line-height:36px;text-align:center;color:#555;font-weight:bold;}
+#box .cc a{color:#555;background:url(images/tu62.jpg) repeat-x;}
+.con{width:596px;padding:10px 10px 0 20px;/*height:100px; height:auto !important; min-height:100px;*/overflow: auto;zoom:1;}
+
+#con1,#con2{display:none}
+.pp{height:36px;line-height:37px;font-size:22px;padding-left:20px;width:320px}
+.text{background:none;width:250px;height:30px;line-height:30px;}
+.text2{width:135px;background:none;height:30px;line-height:30px;}
+.tt{background:url(images/tu64.jpg) no-repeat;}
+.tt:hover{background:url(images/tu68.jpg) no-repeat}
+body,td,th {
+	font-size: 14px;
+}
+.tt2{background:url(images/tu70.jpg) no-repeat;width:137px}
+.tt2:hover{background:url(images/tu71.jpg) no-repeat}
+</style>
+</head>
+
+<body>
+
+
+<div class="bj">
+<div id="box">
+<p class="pp l">用户登录</p>
+<ul class="pp2 l">
+   <li value="0" class="cc"><a href="">用户登录</a></li>
+   <li value="1" ><a href="">快速注册</a></li>
+   
+
+</ul>
+</div>  
+<div class="con" id="con0">
+<table width="95%" border="0" height="100%">
+<tr>
+    <td height="20" colspan="3" valign="top">&nbsp;</td>
+    </tr>
+  <tr>
+    <td width="14%" height="40" valign="middle">用户名：</td>
+    <td width="52%" height="40" valign="top" class="tt"><input name="" type="text" class="text" /></td>
+    <td width="34%" height="40" align="center" valign="middle">使用合作账号登录</td>
+  </tr>
+  <tr>
+    <td height="40" valign="middle">密码：</td>
+    <td height="40" valign="top" class="tt"><input name="" type="text" class="text" /></td>
+    <td height="40" align="center" valign="top"><a href=""><img src="images/tu65.jpg" width="30" height="30" /></a>&nbsp;&nbsp;<a href=""><img src="images/tu66.jpg" width="30" height="30" /></a>&nbsp;&nbsp;<a href=""><img src="images/tu67.jpg" width="30" height="30" /></a></td>
+  </tr>
+  <tr>
+    <td height="20" valign="top">&nbsp;</td>
+    <td height="20" align="right" valign="top" ><a href="" style="color:#00b7ed;text-decoration:underline">忘记密码？</a></td>
+    <td height="20" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="40" valign="top">&nbsp;</td>
+    <td height="40" valign="top"><form id="form1" name="form1" method="post" action="">
+      <label>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+      </label>
+    下次自动登录
+    </form></td>
+    <td height="40" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="40" valign="top">&nbsp;</td>
+    <td height="40" valign="top"><a href=""><img src="images/tu69.jpg" width="81" height="32" /></a></td>
+    <td height="40" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+<div class="con" id="con1">
+<table width="95%" border="0" height="100%">
+<tr>
+    <td height="20" colspan="3" valign="top">&nbsp;</td>
+    </tr>
+  <tr>
+    <td width="14%" height="30" valign="middle"></td>
+    <td width="52%" height="30" valign="middle"><input name="" type="radio" value="" />个人&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />公司及其他单位</td>
+    <td width="34%" height="30" valign="middle"></td>
+  </tr>
+  <tr>
+    <td width="14%" height="40" valign="middle">用户名：</td>
+    <td width="52%" height="40" valign="top" class="tt"><input name="" type="text" class="text" /></td>
+    <td width="34%" height="40" align="center" valign="middle">使用合作账号登录</td>
+  </tr>
+  <tr>
+    <td height="40" valign="middle">密码：</td>
+    <td height="40" valign="top" class="tt"><input name="" type="text" class="text" /></td>
+    <td height="40" align="center" valign="top"><a href=""><img src="images/tu65.jpg" width="30" height="30" /></a>&nbsp;&nbsp;<a href=""><img src="images/tu66.jpg" width="30" height="30" /></a>&nbsp;&nbsp;<a href=""><img src="images/tu67.jpg" width="30" height="30" /></a></td>
+  </tr>
+    <tr>
+    <td height="40" valign="middle">密码密码：</td>
+    <td height="40" valign="top" class="tt"><input name="" type="text" class="text" /></td>
+    <td height="40" align="center" valign="top"></td>
+  </tr>
+    <tr>
+    <td height="40" valign="middle">密码：</td>
+    <td height="40" valign="top" class="tt"><input name="" type="text" class="text" /></td>
+    <td height="40" align="center" valign="top"></td>
+  </tr>
+  <tr>
+    <td height="40" valign="middle">密码：</td>
+    <td height="40" valign="top" class="tt"><input name="" type="text" class="text" /></td>
+    <td height="40" align="center" valign="top"></td>
+  </tr>
+    <tr>
+    <td height="40" valign="middle">验证码：</td>
+    <td height="40" valign="top" class="tt2"><input name="" type="text" class="text2" />&nbsp;&nbsp;<img src="images/tu72.jpg" width="81" height="32" /></td>
+    <td height="40" align="center" valign="top"></td>
+  </tr>
+  <tr>
+    <td height="40" valign="top">&nbsp;</td>
+    <td height="40" valign="top" ><form id="form1" name="form1" method="post" action="">
+      <label><input type="checkbox" name="checkbox" id="checkbox" /></label>
+    我同意用户协议 <a href="" style="color:#00b7ed;">《第1舞台服务协议》</a>
+    </form></td>
+    <td height="40" valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td height="40" valign="top">&nbsp;</td>
+    <td height="40" valign="top"><a href=""><img src="images/tu73.jpg" width="81" height="32" /></a></td>
+    <td height="40" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+
+
+
+<script language="javascript">
+function $(id){return document.getElementById(id)}
+ for(i=0;i<2;i++){
+   $("box").getElementsByTagName("li")[i].onmouseover=function(){
+		 for(n=0;n<2;n++){
+			 $("con"+n).style.display="none"
+			 $("box").getElementsByTagName("li")[n].style.backgroundcolor="url(images/tu63.jpg) repeat-x"
+			 $("box").getElementsByTagName("li")[n].className=""
+		 }
+		v=this.value
+		$("con"+v).style.display="block"
+		this.style.backgroundcolor="url(images/tu62.jpg) repeat-x;"
+		this.className="cc"
+		
+	 }
+   }
+</script>
+</div>
+
+</body>
+</html>

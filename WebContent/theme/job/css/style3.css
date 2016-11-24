@@ -1,0 +1,48 @@
+﻿.top_c{ background:#333; width:100%; height:45px;}
+.top_c .top_c_nav .top_c_nav_l{margin-left:-60px;}
+.top_c .top_c_nav .top_c_nav_l ul li{ float:left; margin:0 20px; font-size:14px; line-height:45px;}
+.top_c .top_c_nav .top_c_nav_l ul li a{color:#FFF;}
+.top_c .top_c_nav .top_c_nav_l .fwfl{ position:relative; padding-right:15px; z-index:20;}
+.top_c .top_c_nav .top_c_nav_l .fwfl .arrow_Downward{ position:absolute; right:0px; top:21px; width:12px; height:6px; background:url(../images/fwfl_Downward.png) no-repeat;}
+.top_c .top_c_nav .top_c_nav_l .fwfl .arrow_Upward{ position:absolute; right:0px; top:21px; width:12px; height:6px; background:url(../images/fwfl_Upward.png) no-repeat;}
+.top_c .top_c_nav .top_c_nav_l .fwfl #fwfl_c{ position:absolute; line-height:normal; font-size:12px; left:0; top:45px;height:422px; display:none;}
+.top_c .top_c_nav .top_c_nav_l .fwfl #fwfl_c .item .product_wrap_c ul li{ line-height:28px; margin-right:15px; margin-left:0}
+.top_c .top_c_nav .top_c_nav_l .fwfl #fwfl_c .item .product_wrap_c ul li a{ color:#9a9a9a}
+.top_c .top_c_nav .top_c_nav_r{ margin:7px 28px 0 0}
+.top_c .top_c_nav .top_c_nav_r img{ margin:0 5px;}
+.top_c .top_c_nav .top_c_nav_r .top_c_nav_r_input{ background:url(../images/top_c_nav_r_input.png) no-repeat; width:147px; height:16px; padding:2px 8px; line-height:16px; color:#FFF; font-size:12px;}
+.top_c .top_c_nav .top_c_nav_r .top_c_nav_r_submit{ background:url(../images/top_c_nav_r_submit.png) no-repeat; width:35px; height:31px; cursor:pointer; margin-left:5px;}
+
+
+.Cnav{ width:235px; height:530px; position:relative; background:url(../images/Cnav_bg.gif) #333333 top repeat-x; z-index:2}
+.Cnav .item{ margin-left:1px; padding:10px 15px; width:204px; position:relative; height:41px;}
+.Cnav .item .product{ color:#FFF; position:relative;}
+.Cnav .item .product h3{ margin-bottom:5px;}
+.Cnav .item .product span{ position:absolute; right:0; top:5px; width:6px; height:12px;}
+.Cnav .item .product span.product_Arrow{ background:url(../images/product_Arrow1.png) no-repeat;}
+.Cnav .item .product span.product_Arrow2{ background:url(../images/product_Arrow2.png) no-repeat;}
+.Cnav .item .product .Cnav_Column a{ display:inline-block; margin-right:20px; color:#FFF;}
+.Cnav .item .product .Cnav_Column a.Cnav_Column_margin{ margin-right:39px;}
+.Cnav .active{ background:#FFF;}
+.Cnav .active h3{ color:#333333}
+.Cnav .active .product .Cnav_Column a{ color:#333333;}
+.Cnav .item .product_wrap{ display:none; position:absolute; left:234px; top:-1px; background:#FFF; border:1px solid #cecece; border-left:0; width:636px; padding:10px 15px 15px;-webkit-box-shadow: 3px 0 5px rgba(0,0,0,0.2);-moz-box-shadow: 3px 0 5px rgba(0,0,0,0.2);
+box-shadow: 3px 0 5px rgba(0,0,0,0.2); z-index:10;}
+.product_wrap .product_wrap_c h2{ color:#e20822;}
+.product_wrap .product_wrap_c h3{ background:url(../images/product_wrap_c_h3.gif) left center no-repeat; padding-left:15px; color:#333333; margin-top:5px;}
+.product_wrap .product_wrap_c ul{ overflow:hidden; margin-top:5px;}
+.product_wrap .product_wrap_c ul li{ float:left; margin-right:15px;white-space:nowrap; line-height:28px;}
+.product_wrap .product_wrap_c ul li a{ color:#9a9a9a; font-size:14px;}
+.product_wrap .product_wrap_hr{height:1px;border:none;border-top:1px dotted #d4d4d4;margin:10px 0;*margin:10px 0 -4px 0;float:none;*float:left;display:block;}
+.Cnav .item .posOne{ border-top:0; top:0}
+.Cnav .item .posTwo{ height:335px;}
+.Content_r{ overflow:hidden; padding-top:10px;}
+
+
+
+.product_wrap .product_wrap_c h2{ color:#e20822;}
+.product_wrap .product_wrap_c h3{ background:url(../images/product_wrap_c_h3.gif) left center no-repeat; padding-left:15px; color:#333333; margin-top:5px;}
+.product_wrap .product_wrap_c ul{ overflow:hidden; margin-top:5px;}
+.product_wrap .product_wrap_c ul li{ float:left; margin-right:15px;white-space:nowrap; line-height:28px;}
+.product_wrap .product_wrap_c ul li a{ color:#9a9a9a; font-size:14px;}
+.product_wrap .product_wrap_hr{height:1px;border:none;border-top:1px dotted #d4d4d4;margin:10px 0;*margin:10px 0 -4px 0;float:none;*float:left;display:block;}

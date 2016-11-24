@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+body,html {margin: 0px;padding: 0;font-family: "Microsoft Yahei";}
+body, td, th {font-size: 12px;}
+div, ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, p, img, input {margin: 0px;padding: 0px;list-style-type: none;}
+img {border: 0px;margin: 0px;padding: 0px;}
+h1 {font-size: 24px;}
+h2 {font-size: 18px;}
+h3 {font-size: 15px;}
+h4 {font-size: 13px;}
+h5 {font-size: 12px;}
+a {text-decoration: none;}
+
+.task_all{ width:100%; height:auto; overflow:hidden; zoom:1; background:#f5f5f5;}
+.task{ width:998px; height:auto; overflow:hidden; zoom:1; background:#FFF; border:solid 1px #dfdfdf; margin:20px auto;}
+.task1{ width:840px; margin:0 auto; height:278px; border-bottom:solid 1px #999999; position:relative;}
+.task1_bg{ position:absolute; top:0px; left:0px; width:35px; height:49px; background: url(/theme/task/images/task_bg01.jpg) no-repeat;}
+.task1_fb{ position:absolute; top:138px; left:610px; font:normal 14px/24px "Microsoft Yahei"; color:#666666;}
+.task1_fb a{ display:block; width:112px; height:30px; background:url(/theme/task/images/task_bg02.jpg) no-repeat; color:#FFF; text-align:center; margin-top:8px; font:normal 16px/30px "Microsoft Yahei"; }
+
+.task1_fb_fromweb a{ display:block; width:112px; height:30px; background:url(/theme/task/images/task_bg02.jpg) no-repeat; color:#FFF; text-align:center; margin-top:8px; font:normal 16px/30px "Microsoft Yahei"; }
+
+.task1_xx{ position:absolute; top:96px; left:80px; width:152px; height:62px; padding:10px; background:url(/theme/task/images/task_bg07.jpg) no-repeat; display:none; }
+.task1_xx p{ float:left; width:200px; height:60px; color:#000; font:normal 16px/24px "Microsoft Yahei";}
+.task1_xx img{ float:left; border:solid 1px #e0e0e0; margin-right:10px;}
+.task1_xx p a{ color:#666;}
+.task1_xx a.s{ color:#ff3d3d; font:normal 14px/30px "Microsoft Yahei";}
+.task1_rw{ width:550px; height:auto; overflow:hidden; zoom:1;}
+.task1_rw h3{ margin-top:50px; font:normal 24px/58px "Microsoft Yahei";}
+.task1_nr{ font:normal 16px/30px "Microsoft Yahei"; color:#666;}
+.task1_nr span{ width:100px; display:block; float:left;}
+.task1_nr b{ font:bold 18px/30px "Microsoft Yahei"; color:#000;}
+.task1_nr p{ float:left; margin-top:10px; width:200px; height:60px; color:#000; font:normal 16px/24px "Microsoft Yahei";}
+.task1_nr p a{ color:#666;}
+.task1_nr img{ float:left; border:solid 1px #e0e0e0; margin-right:10px;}
+.task1_nr font{ color:#999999; font:normal 14px/24px "Microsoft Yahei";}
+
+.task2{ width:840px; margin:0 auto; height:auto; overflow:hidden; zoom:1; border-bottom:solid 1px #999999;}
+.task2 h3{ margin-top:22px; font:normal 24px/58px "Microsoft Yahei"; margin-bottom:4px;}
+.task2_cont{ font:normal 14px/24px "Microsoft Yahei"; color:#666; margin-bottom:20px;}
+.task2_table{ width:100%; border-top:solid 1px #dfdfdf; border-left:solid 1px #dfdfdf; margin-bottom:40px;}
+.task2_table tr td{ border-right:solid 1px #dfdfdf; border-bottom:solid 1px #dfdfdf; text-align:center;font:normal 14px/42px "Microsoft Yahei"; color:#666666;}
+.task2_table tr td.task2_bg{font:normal 18px/50px "Microsoft Yahei"; color:#000000; background:#f8fafe;}
+.task2_table tr td a{ display:block; width:71px; height:23px; color:#ff3d3d; text-align:center;font:normal 14px/23px "Microsoft Yahei"; background:url(/theme/task/images/task_bg03.jpg) no-repeat; margin-left:28px;}
+.task2_table tr td a:hover{ background:url(/theme/task/images/task_bg04.jpg) no-repeat; color:#FFF;}
+.task2_one{  width:100%; margin-bottom:40px;}
+.task2_one a{ display:block; width:112px; height:30px; background:url(/theme/task/images/task_bg02.jpg) no-repeat; color:#FFF; text-align:center; margin-top:8px; font:normal 16px/30px "Microsoft Yahei"; }
+
+.task3{ width:840px; margin:0 auto; height:336px; border-bottom:solid 1px #999999;}
+.task3 h3{ margin-top:22px; font:normal 24px/58px "Microsoft Yahei"; margin-bottom:14px;}
+.task3 ul{ width:840px; height:auto; overflow:hidden; zoom:1;}
+.task3 ul li{ float:left; width:168px; height:60px; color:#000; font:normal 16px/24px "Microsoft Yahei"; margin-bottom:24px;}
+.task3 ul li a{ color:#666;}
+.task3 ul li img{ float:left; border:solid 1px #e0e0e0; margin-right:10px;}
+.task3 ul li font{ color:#999999; font:normal 14px/24px "Microsoft Yahei";}
+.list_fy{ height:40px; width:660px; margin-top:15px; margin-left:180px; margin-bottom:40px;}
+.list_fy div{ float:left; width:60px; font:normal 16px/40px "Microsoft YaHei"; margin-right:20px; }
+.list_fy div span{ color:#ff3d3d; margin:0 5px;}
+.list_fy ul{ width:360px; height:40px; overflow:hidden; zoom:1; float:left;}
+.list_fy ul li{ width:40px; height:40px; float:left; margin-right:8px; margin-bottom:0px;}
+.list_fy ul li a{ display:block; float:left; width:38px; height:38px; text-align:center; font:normal 14px/38px "Microsoft YaHei";  border:solid 1px #dddddd; color:#555555;}
+.list_fy ul li a:hover,.list_fy ul li a.on{ background:#ff3d3d; color:#FFF;}
+.list_fy ul li.pre,.list_fy ul li.pre a:hover{ background:url(/theme/task/images/pre.jpg) no-repeat; border:none; width:40px; height:40px; }
+.list_fy ul li.next,.list_fy ul li.next a:hover{ background:url(/theme/task/images/next.jpg) no-repeat; border:none; width:40px; height:40px; }
+
+.task4{ width:840px; margin:0 auto; height:auto; overflow:hidden; zoom:1; position:relative; margin-bottom:50px;}
+.task4 h3{ margin-top:22px; font:normal 24px/58px "Microsoft Yahei"; margin-bottom:14px;}
+#task44{ width:840px; height:auto; overflow:hidden; zoom:1;}
+.task4 ul { width:840px; height:44px; overflow:hidden; zoom:1;}
+.task4 ul li{ float:left; width:160px; text-align:center; font:normal 14px/28px "Microsoft YaHei";}
+.task4 ul li a{ color:#000;}
+.task4 ul li a.see{ display:block; float:left; width:89px; height:28px; text-align:center; font:normal 14px/28px "Microsoft YaHei"; background:url(/theme/task/images/task_bg05.jpg) no-repeat; color:#ff3d3d; display:none;}
+.task4 ul li.task4_li1{ width:460px; text-align:left;}
+.task4_more a{ display:block; width:156px; height:38px; background:url(/theme/task/images/task_bg06.jpg) no-repeat; text-align:center; font:normal 18px/38px "Microsoft YaHei"; color:#999; /*position:absolute; top:268px; left:642px; */}
+
+

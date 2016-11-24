@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+.gr-zhong{width:990px;height:177px;position:relative}
+
+.zhong-tu{width:112px;margin-right:10px;}
+.zhong-tu li{margin-bottom:5px;}
+
+.qy-tu2{width:685px;}
+.gr-tu2{position:absolute;top:40px;left:700px;font-size:14px;line-height:38px}
+.gr-tu3{position:absolute;top:60px;left:600px;font-size:14px;line-height:38px}
+.gr-tu4{position:absolute;top:80px;left:600px;font-size:14px;line-height:38px}
+.gr-tu3 a,.gr-tu4 a{color:#f00001}
+.gr-dtpf{width:160px;height:175px;border-left:1px solid #ccc;padding-left:10px}
+.gr-dtpf li.dt{font-weight:bold;font-size:15px;}
+.gr-dtpf li{line-height:30px;height:30px}
+.gr-dtpf li.dt2{color:#f07d60}
+
+.gr-dtpf li img{width:12px;height:12px;margin-left:6px;}
+.qy-banner{height:191px;}
+/*正文*/
+.gr-nex{width:1013px;margin:0 auto;overflow:auto;zoom:1;}
+
+/*正文左边*/
+.gr-nex1{width:305px;height:1103px;margin-right:8px;margin-top:20px}
+.gr-nex1-top{margin-bottom:10px;}
+.gr-nex1-left{background:url(../images2/tu98.jpg) repeat-y;height:auto;width:280px;padding:0px 12px;}
+.gr-nex1-left2{background:url(../images2/tu98.jpg) repeat-y;height:600px;width:280px;padding:0px 12px;}
+.gr-nex1-left li.gezl{border-bottom:1px solid #ff60c8;color:#ff60c8;font-size:18px;height:32px;line-height:32px}
+.gr-nex1-left li{height:32px;line-height:32px;}
+.gr-nex1-dl{width:81px;margin:15px 25px;height:150px;  }
+.gr-nex1-dl dt{width:81px;height:110px;}
+.gr-nex1-dl dl{line-height:20px;height:20px;}
+.gr-nex1-dl dl.dd{color:#ed7857}
+
+
+
+/*正文右边*/
+.gr-nex2{width:690px;overflow:auto;zoom:1;height:1500px}
+.gr-nex2-right{height:40px;width:690px;padding-left:10px;background:#333;color:#fff;font-size:16px;font-weight:bold;;margin-top:10px;}
+
+.gr-nex2-right2{width:690px;height:35px;line-height:35px;text-align:center}
+
+.gr-nex2-right3{width:690px;height:536px;}
+.gr-nex2-right4{width:223px;height:260px;}
+.gr-nex2-right4 dt{width:223px;height:204px;}
+.gr-nex2-right4 dd{line-height:38px;height:38px;text-align:center;width:223px;}
+
+.gr-nex2-right5{margin-right:10px;}
+
+.gr-nex2-right6{float:right;}
+.gr-nex2-right6 a{color:#24baec}
+
+
+.gr-nex2-right7{width:690px;height:415px;margin:10px 0}
+.gr-right7-zz{width:680px;height:415px;background:url(../images2/tu108.jpg) repeat-x;}
+
+.gr-right7-jy{width:656px;padding-left: 10px;border-bottom:1px solid #ff60ca;height:39px;line-height:39px;color:#ff60ca;font-size:16px;font-weight:bold}
+
+.gr-nex2-right8{width:690px;height:315px;background:#fff}
+
+.gr-nex2-right9{width:666px;height:255px;margin:10px 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

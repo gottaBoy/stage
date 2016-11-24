@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>com.smt.webapp.util.imageUploader.Upload</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DataViewImages</servlet-name>
+		<servlet-class>com.smt.webapp.util.imageUploader.DataViewImages</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteImages</servlet-name>
+		<servlet-class>com.smt.webapp.util.imageUploader.DeleteImages</servlet-class>
+	</servlet>
+<!-- 	<servlet>  -->
+<!--         <servlet-name>reg</servlet-name>    此行的cgz是用于标识的和下面的一致 -->
+<!--         <jsp-file>/WEB-INF/page/public/regProtocol.jsp</jsp-file>   需要访问的页面的路径 -->
+<!-- </servlet>  -->
+<!-- <servlet-mapping>  -->
+<!--         <servlet-name>reg</servlet-name>     -->
+<!--         <url-pattern>/reg</url-pattern>   -->
+<!-- </servlet-mapping>  -->
+	
+
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/servlet/Upload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DataViewImages</servlet-name>
+		<url-pattern>/servlet/DataViewImages</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteImages</servlet-name>
+		<url-pattern>/servlet/DeleteImages</url-pattern>
+	</servlet-mapping>
+	<filter>
+		    <filter-name>memberFilter</filter-name> 
+		    <filter-class>com.smt.webapp.util.MemberFilter</filter-class> 
+	</filter> 
+	<filter-mapping> 
+		    <filter-name>memberFilter</filter-name> 
+		    <url-pattern>/member/*</url-pattern>
+	</filter-mapping>
+	 <filter>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+		<init-param>
+			<param-name>logLevel</param-name>
+			<param-value>WARN</param-value>
+		</init-param>
+	</filter>
+	<!-- 伪静态过滤器映射--> 
+	<filter-mapping>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+		<dispatcher>REQUEST</dispatcher>    
+       	<dispatcher>FORWARD</dispatcher>   
+       	 
+	</filter-mapping>
+   
+	<servlet>  
+		<servlet-name>TimerServlet</servlet-name>  
+		<servlet-class>com.smt.common.TimerServlet</servlet-class>  
+		<load-on-startup>0</load-on-startup> 
+	</servlet>  
+	<servlet-mapping>  
+		<servlet-name>TimerServlet</servlet-name>  
+		<url-pattern>/servlet/TimerServlet</url-pattern>  
+	</servlet-mapping>
+	
+	<servlet>  
+		<servlet-name>H5WeixinHelper</servlet-name>  
+		<servlet-class>com.smt.webapp.weih5.utils.H5WeixinHelper</servlet-class>  
+		<load-on-startup>1</load-on-startup> 
+	</servlet>  
+	<servlet-mapping>  
+		<servlet-name>H5WeixinHelper</servlet-name>  
+		<url-pattern>/servlet/H5WeixinHelper</url-pattern>  
+	</servlet-mapping>
+   
+   
+   <welcome-file-list>
+    	<welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+   <listener>         
+   		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>     
+   </listener> 
+   <listener> 
+  		<listener-class>com.smt.webapp.util.OnlineUser</listener-class> 
+   </listener> 
+   
+   <!-- 防止内存泄漏的监听器 -->   
+   <listener>
+   		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+   </listener>
+   <!-- 编码方式 -->
+   <filter>
+   		<filter-name>encodingFilter</filter-name>
+   		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+   		<init-param>
+   			<param-name>encoding</param-name>
+   			<param-value>UTF-8</param-value>
+   		</init-param>
+   		<init-param>
+   			<param-name>forceEncoding</param-name>
+   			<param-value>true</param-value>
+   		</init-param>
+   </filter>
+   <context-param>         
+   		<param-name>contextConfigLocation</param-name>         
+   		<param-value>/WEB-INF/classes/applicationContext.xml</param-value>      
+   </context-param>  
+   <!-- struts2配置文件 -->       
+   <filter>
+   		<filter-name>struts2</filter-name>
+   		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+   </filter>
+   <filter-mapping>
+   		<filter-name>struts2</filter-name>
+   		<url-pattern>*.htm</url-pattern>
+   		<dispatcher>REQUEST</dispatcher>    
+       	<dispatcher>FORWARD</dispatcher>    
+       	<dispatcher>INCLUDE</dispatcher> 
+   </filter-mapping>
+  
+  <servlet>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>com.smt.webapp.util.ImageServlet</servlet-class>
+  </servlet>
+
+
+<!-- dwr start -->
+	<servlet>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>
+			org.directwebremoting.servlet.DwrServlet
+		</servlet-class>
+		<init-param>
+			<description>调试DWR,发布系统时应将其设为false</description>
+			<param-name>debug</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		
+		<init-param>   
+            <param-name>crossDomainSessionSecurity</param-name>   
+            <param-value>false</param-value>   
+        </init-param>
+		
+		<init-param>
+			<description>使用服务器推技术(反转AJAX)</description>
+			<param-name>activeReverseAjaxEnabled</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>
+				initApplicationScopeCreatorsAtStartup
+			</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>maxWaitAfterWrite</param-name>
+			<param-value>100</param-value>
+		</init-param>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>dwr-invoker</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+	
+	<!-- dwr end -->
+	
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/imageServlet</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/WEB-INF/page/weih5/error/404.jsp</location>
+  </error-page>
+
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/WEB-INF/page/weih5/error/500.jsp</location>
+  </error-page>
+</web-app>
